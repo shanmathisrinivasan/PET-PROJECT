@@ -1,0 +1,50 @@
+.app-bar {
+    background-color: burlywood; /* Change the background color of the app bar */
+  }
+  
+  .app-bar-buttons {
+    color: rgb(253, 248, 248); /* Change the color of the app bar buttons */
+    margin-left: auto; /* Align the app bar buttons to the right */
+  }
+  
+  .background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/9f/df/93/9fdf93860f9269c05411e27291a7b936.gif');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    /* Add any additional styles you need */
+  }
+  
+  h1 {
+    /* Add styles for the 'Hello' heading if needed */
+    color: rgb(255, 255, 255);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: dance 2s infinite alternate;
+    font-size: 48px;
+    transition: opacity 3.5s ease;
+  }
+  
+  @keyframes dance {
+    0% {
+      transform: translateX(0);
+    }
+    25% {
+      transform: translateX(20px) rotate(5deg);
+    }
+    50% {
+      transform: translateX(-20px) rotate(-5deg);
+    }
+    75% {
+      transform: translateX(20px) rotate(5deg);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
